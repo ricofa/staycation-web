@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Button from "elements/Button";
 import BrandIcon from "parts/IconText";
+import Fade from 'react-reveal/Fade';
 
 export default function Header() {
 
@@ -11,6 +12,7 @@ export default function Header() {
   };
 
   return (
+    <Fade>
     <header className="spacing-sm">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -44,5 +46,6 @@ export default function Header() {
         </nav>
       </div>
     </header>
+    </Fade>
   );
 }
